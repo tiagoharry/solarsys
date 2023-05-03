@@ -2,9 +2,26 @@
 <html lang="pt-br">
 
 <head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Nós fornecemos soluções de CRM para integradores de energia solar com expertise em tecnologia e energia renovável. Nossa equipe altamente qualificada se dedica a oferecer as melhores ferramentas para gerenciar negócios de forma eficiente e eficaz.">
+  <meta name="keywords" content="inovação, gestão, tecnologia, energia renovavel, ">
+  <meta name="author" content="SolarSys">
+  <meta name="creator" content="SolarSys">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="robots" content="all">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>SolarSys</title>
 </head>
 
@@ -30,20 +47,22 @@
     <div class="quemSomos" id="quemSomos">
       <div class="quemSomos_container">
         <div class="quemSomos_title">
-          <img src="./assets/logoSolar.svg" alt="">
+          <img class="logo_img" src="./assets/logoSolar.svg" alt="">
           <h1>Simplificar processos é o próximo passo para a sua empresa!</h1>
-          <img src="./assets/quemsomos_mobile.svg" alt="">
-          <a href=""><button>VAMOS CONVERSAR<img src="./assets/arrow-right.svg" alt=""></button></a>
+          <img class="img_quemsomos" src="./assets/quemsomos_mobile.svg" alt="">
+          <a href=""><button class="btn-vamos-conversar">VAMOS CONVERSAR<img src="./assets/arrow-right.svg"
+                alt=""></button></a>
         </div>
-        <div class="quemSomos_img">
-          <img src="" alt="">
-        </div>
+
+        <img class="quemSomos_img" src="./assets/arrow-down.svg" alt="">
+
         <div class="quemSomos_textContainer">
           <div class="quemSomos_text_title">
-            <img src="" alt="">
+            <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
             <h2>QUEM SOMOS</h2>
           </div>
-          <p>Nós fornecemos soluções de CRM para integradores de energia solar com expertise em tecnologia e energia
+          <p class="quemsomosparagraph">Nós fornecemos soluções de CRM para integradores de energia solar com expertise
+            em tecnologia e energia
             renovável. Nossa equipe altamente qualificada se dedica a oferecer as melhores ferramentas para gerenciar
             negócios de forma eficiente e eficaz.</p>
         </div>
@@ -53,15 +72,29 @@
 
     <div class="funcionalidades" id="funcionalidades">
       <div class="funcionalidades_container">
-        <div class="funcionalidades_title">
-          <img src="./assets/Ellipse 2.svg" alt="">
-          <h2>FUNCIONALIDADES</h2>
+        <div class="funcionalidade_content">
+          <div class="funcionalidades_title">
+            <img src="./assets/Ellipse 2.svg" alt="">
+            <h2>FUNCIONALIDADES</h2>
+          </div>
+          <p>Conheça o nosso portfólio de serviços.</p>
         </div>
-        <p>Conheça o nosso portfólio de serviços.</p>
         <div class="funcionalidades_list">
-
+          <ul>
+            <li><img src="./assets/imgList_dollar.svg" alt=""> Controle de custos por projetos</li>
+            <li><img src="./assets/imgList_gerenciar.svg" alt=""> Gerenciar vendedores e</br>
+              relatórios de desempenho</li>
+            <li><img src="./assets/imgList_organizar.svg" alt=""> Organização por etapas</br>
+              de negociação</li>
+            <li><img src="./assets/imgList_centralizar.svg" alt="">Centralizar informações e</br>
+              histórico de atividades</li>
+            <li><img src="./assets/imgList_cadastro.svg" alt="">Cadastro de kits fotovotaicos</li>
+            <li><img src="./assets/imgList_geracao.svg" alt="">Geração de propostas</li>
+            <li><img src="./assets/imgList_relatorios.svg" alt="">Relatórios de status</br> de propostas</li>
+            <li><img src="./assets/imgList_vendas.svg" alt="">Relatório de vendas</li>
+          </ul>
         </div>
-        <button>COMECE AGORA MESMO</button>
+        <button class="btn-comece-agora">COMECE AGORA MESMO</button>
       </div>
     </div>
 
@@ -75,7 +108,7 @@
 
     <div class="planos" id="planos">
       <div class="planos_container">
-        <div class="planos_ttle">
+        <div class="planos_title">
           <img src="./assets/Ellipse 2.svg" alt="">
           <h2>ACOMPANHE NOSSOS PLANOS</h2>
         </div>
@@ -83,37 +116,45 @@
           <p>Estabelecemos parcerias com os maiores distribuidores do mercado para oferecer tabelas de preços exclusivas
             para você!
             Aproveite condições especiais e vantagens únicas ao fechar negócio conosco.</p>
-          <button>QUERO SABER MAIS <img src="./assets/arrow-right.svg" alt=""></button>
+          <button class="planos_btn"> QUERO SABER MAIS <img src="./assets/arrow-right.svg" alt=""></button>
         </div>
       </div>
     </div>
 
     <div class="contato" id="contato">
       <div class="contato_container">
-        <img src="./assets/contato_cellphone.svg" alt="">
-        <div class="contato_title">
-          <img src="./assets/Ellipse 2.svg" alt="">
-          <h2>ENTRE EM CONTATO</h2>
-        </div>
-        <form action="">
-          <p>Entre para a lista de espera e seja um dos primeiros a testar grátis o CRM desenvolvido para integradores
+        <img class="phone_img" src="./assets/contato_cellphone.svg" alt="">
+        <div class="contato_text">
+          <div class="contato_title">
+            <img src="./assets/Ellipse 2.svg" alt="">
+            <h2>ENTRE EM CONTATO</h2>
+          </div>
+          <p>Entre para a lista de espera e seja um dos primeiros a testar</br> grátis o CRM desenvolvido para
+            integradores
             de energia solar.</p>
+        </div>
+
+        <form action="">
+
           <div class="form">
             <input type="text" placeholder="Nome Completo">
             <input type="number" placeholder="Telefone">
             <input type="email" placeholder="E-mail">
             <input type="number" placeholder="Cnpj">
           </div>
-          <div class="checkbox1">
+          <div class="checkbox_content">
+            <div class="checkbox1">
             <input type="checkbox" name="" id="">
-            <span>Eu concordo em receber mensagens  através deste e-mail.</span>
+            <span>Eu concordo em receber mensagens através deste e-mail.</span>
           </div>
           <div class="checkbox2">
             <input type="checkbox" name="" id="">
-            <span>Eu concordo em receber mensagens  pelo meu número de telefone.</span>
+            <span>Eu concordo em receber mensagens pelo meu número de telefone.</span>
+          </div>
           </div>
           
-            <button type="submit">ENVIAR</button>
+
+          <button type="submit">ENVIAR</button>
         </form>
       </div>
     </div>
@@ -122,22 +163,22 @@
   <footer>
     <div class="footer_links">
       <div class="email">
-        <img src="" alt="">
+        <img src="./assets/email.svg" alt="">
         <a href="">contato@plataformasolarsys.com.br</a>
       </div>
       <div class="phone">
-        <img src="" alt="">
+        <img src="./assets/phone.svg" alt="">
         <a href="">(51) 99591-5647</a>
       </div>
       <div class="adress">
-        <img src="" alt="">
+        <img src="./assets/adress.svg" alt="">
         <a href="">Avenida Tiarajú, 1406, Sala 33 Pampatec - Alegrete/RS</a>
       </div>
     </div>
-      <div class="copyright">
-        <p>Design by: </p>
-        <img src="./assets/miho_logo.svg" alt="">
-      </div>
+    <div class="copyright">
+      <p>Design by: </p>
+      <img src="./assets/miho_logo.svg" alt="">
+    </div>
   </footer>
 </body>
 

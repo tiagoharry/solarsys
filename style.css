@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'lato', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-family: 'lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #13273B;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.quemSomos_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.quemSomos_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quemSomos_title h1 {
+  width: 261px;
+}
+
+.logo_img {
+  width: 196px;
+  height: 50px;
+}
+
+.img_quemsomos {
+  width: 200px;
+  height: 170px;
+}
+
+.btn-vamos-conversar {
+  background-color: #13273B;
+  color: #ffff;
+  font-size: 12px;
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px 0px 24px;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.quemSomos_img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.quemSomos_text_title,
+.funcionalidades_title {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #13273B;
+}
+
+.quemsomosparagraph {
+  font-family: 'lato', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #19171C;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.funcionalidades {
+  margin-top: 30px;
+
+}
+
+.funcionalidades_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.funcionalidade_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.funcionalidade_content p {
+  font-size: 12px;
+  color: #19171C;
+  margin-bottom: 16px;
+}
+
+.funcionalidades_list {
+  margin-left: -44px;
+}
+
+ul li {
+  font-family: 'lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #19171C;
+  list-style: none;
+  text-decoration: underline;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn-comece-agora {
+  background-color: #13273B;
+  color: #ffff;
+  font-size: 12px;
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 24px 0px 24px;
+  gap: 8px;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.middle img {
+  margin-bottom: 32px;
+}
+
+.middle_content {
+  background: #E4E8ED;
+  border-radius: 0px 108.5px 108.5px 0px;
+  padding: 43px 72px;
+  margin-right: 13px;
+}
+
+.planos_title {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 200px;
+  margin-left: 16px;
+}
+
+.planos_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.planos_content p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  text-align: justify;
+  width: 328px;
+  margin-bottom: 32px;
+}
+
+.planos_btn {
+  background-color: #13273B;
+  color: #ffff;
+  font-size: 12px;
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 24px 0px 24px;
+  gap: 8px;
+}
+
+.contato {
+  margin-top: 32.33px;
+  background: #E4E8ED;
+  padding-top: 31.77px;
+  padding-bottom: 32px;
+}
+
+.contato_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phone_img {
+  width: 180px;
+  margin: 0 auto;
+}
+
+.contato_text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contato_title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /*margin-left: 16px;*/
+  margin-top: 32.38px;
+}
+
+.contato_text p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  color: #19171C;
+  text-decoration-line: underline;
+  /*margin-left: 16px;*/
+  margin-top: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.form input {
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 24px;
+  width: 310px;
+}
+
+.form input::placeholder {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6F7481;
+  text-decoration-line: underline;
+}
+
+.checkbox1, .checkbox2 {
+  display: flex;
+  align-items: center;
+  gap: 9.44px;
+}
+
+.checkbox1 {
+  margin-bottom: 8px;
+}
+
+.checkbox1 span,
+.checkbox2 span {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #141927;
+}
+
+form button {
+  background: #13273B;
+  border-radius: 30px;
+  padding: 15.5px 24px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+
+footer {
+  background: #13273B;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 13.5px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 10.69px;
+}
+
+.email, .phone, .adress {
+  display: flex;
+ align-items: center;
+ gap: 9.75px;
+}
+
+.footer_links a {
+  font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+color: #FFFFFF;
+text-decoration-line: underline;
+}
+
+.copyright {
+  font-size: 8px;
+line-height: 10px;
+color: #FFFFFF;
+text-decoration-line: underline;
+display: flex;
+align-items: center;
+gap: 8px;
+margin-top: 10px;
+}
+
+.copyright img {
+  width: 29px;
+}
