@@ -177,10 +177,19 @@
   .btn-comece-agora {
     font-size: 16px;
     margin-top: 8px;
+    margin-bottom: 110px;
   }
 
   .middle {
+    margin-top: 110px;
     margin-bottom: 96px;
+    position: relative;
+  }
+
+  .middle_img {
+    position: absolute;
+    left: -58px;
+    top: -145px;
   }
 
   .middle img {
@@ -189,10 +198,15 @@
     margin-top: 95px;
   }
 
+  .middle_content {
+    margin-right: 159px;
+  }
+
   .middle_content p {
     width: 741px;
     font-size: 31px;
     line-height: 37px;
+    margin-left: 445px;
   }
 
   .planos {
