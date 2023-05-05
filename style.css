@@ -18,6 +18,10 @@ header {
   display: none;
 }
 
+.menu_desktop {
+  display: none;
+}
+
 h1 {
   font-family: 'lato', sans-serif;
   font-weight: 700;
@@ -122,7 +126,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .funcionalidade_content {
@@ -214,10 +217,11 @@ ul li {
 
 .middle_content p {
   width: 215px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .planos_title {
-  text-align: justify;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -337,7 +341,8 @@ form {
   position: relative;
 }
 
-.checkbox1 input, .checkbox2 input {
+.checkbox1 input,
+.checkbox2 input {
   position: absolute;
   left: 0;
   width: 9.44px;
@@ -361,10 +366,10 @@ form {
   display: block;
 }
 
-.checkbox_content input:checked + label::before {
+.checkbox_content input:checked+label::before {
   background-image: url("data:image/svg+xml,%3Csvg width='10' height='11' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='0.950928' width='9.43596' height='9.43596' rx='4.71798' fill='%2313273B'/%3E%3Cpath d='M6.77572 4.33398L3.67167 7.43803L2.26074 6.0271' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
   background-position: 10%;
-  background-size:105%;
+  background-size: 105%;
   background-repeat: no-repeat;
 }
 

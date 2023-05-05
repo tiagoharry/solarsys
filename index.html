@@ -21,6 +21,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="desktop.css">
 
   <title>SolarSys</title>
 </head>
@@ -28,6 +29,17 @@
 <body>
   <header>
     <img src="./assets/logoHeader.svg" alt="logo SolarSys">
+
+    <div class="menu_desktop">
+      <nav>
+        <a href="#">Início</a>
+        <a href="#quemSomos">Quem Somos</a>
+        <a href="#funcionalidades">funcionalidades</a>
+        <a href="#planos">planos</a>
+        <a href="#contato">Contato</a>
+        <a href="#buttonHeader">Agendar reunião</a>
+      </nav>
+    </div>
     <div class="menu-mobile">
       <img class="menu-open" src="./assets/menu.svg" alt="">
     </div>
@@ -35,11 +47,12 @@
 
   <div class="menu-drop hide">
     <nav>
+      <a href="">Início</a>
       <a href="#quemSomos">Quem Somos</a>
       <a href="#funcionalidades">funcionalidades</a>
       <a href="#planos">planos</a>
       <a href="#contato">Contato</a>
-      <a href="#buttonHeader" class="btn_sample_nav">Agendar reunião</a>
+      <a href="#buttonHeader">Agendar reunião</a>
     </nav>
   </div>
 
@@ -52,12 +65,16 @@
           <img class="img_quemsomos" src="./assets/quemsomos_mobile.svg" alt="">
           <a href=""><button class="btn-vamos-conversar">VAMOS CONVERSAR<img src="./assets/arrow-right.svg"
                 alt=""></button></a>
+          <div class="img_quemsomos_desktop">
+            <img src="" alt="">
+          </div>
         </div>
 
         <img class="quemSomos_img" src="./assets/arrow-down.svg" alt="">
 
         <div class="quemSomos_textContainer">
-          <div class="quemSomos_text_title">
+          <div class="quemSomos_text">
+             <div class="quemSomos_text_title">
             <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
             <h2>QUEM SOMOS</h2>
           </div>
@@ -65,8 +82,14 @@
             em tecnologia e energia
             renovável. Nossa equipe altamente qualificada se dedica a oferecer as melhores ferramentas para gerenciar
             negócios de forma eficiente e eficaz.</p>
+          </div>
+         
+          <div class="img_quem">
+            <img src="./assets/quemSomos_img.svg" alt="">
+          </div>
         </div>
-        <img src="./assets/quemSomos_img.svg" alt="">
+
+
       </div>
     </div>
 
@@ -74,7 +97,7 @@
       <div class="funcionalidades_container">
         <div class="funcionalidade_content">
           <div class="funcionalidades_title">
-            <img src="./assets/Ellipse 2.svg" alt="">
+            <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
             <h2>FUNCIONALIDADES</h2>
           </div>
           <p>Conheça o nosso portfólio de serviços.</p>
@@ -111,7 +134,7 @@
     <div class="planos" id="planos">
       <div class="planos_container">
         <div class="planos_title">
-          <img src="./assets/Ellipse 2.svg" alt="">
+          <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
           <h2>ACOMPANHE NOSSOS PLANOS</h2>
         </div>
         <div class="planos_content">
@@ -128,7 +151,7 @@
         <img class="phone_img" src="./assets/contato_cellphone.svg" alt="">
         <div class="contato_text">
           <div class="contato_title">
-            <img src="./assets/Ellipse 2.svg" alt="">
+            <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
             <h2>ENTRE EM CONTATO</h2>
           </div>
           <p>Entre para a lista de espera e seja um dos primeiros a testar</br> grátis o CRM desenvolvido para
