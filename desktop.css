@@ -106,6 +106,10 @@
     line-height: 24px;
   }
 
+  .quemSomos_img {
+    width: 526.98px;
+  }
+
   .funcionalidade_content {
     align-items: start;
   }
@@ -145,7 +149,7 @@
   .middle img {
     width: 210px;
     height: 209.97px;
-    margin-top: 195px;
+    margin-top: 95px;
   }
 
   .middle_content p {
@@ -157,6 +161,8 @@
   .planos {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-bottom: 96px;
   }
 
   .planos_container {
@@ -164,25 +170,106 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    margin-bottom: 96px;
+    margin-bottom: 0;
+  }
+
+  .youtubeDesktop_img {
+    display: block;
+    width: 460px;
+    height: 261px;
   }
 
   .planos_title {
     align-items: center;
     gap: 16px;
-    margin-bottom: 16px;
     margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .youtube_img {
+    display: none;
+  }
+
+  .planos_content {
+    align-items: flex-start;
   }
 
   .planos_content p {
     font-size: 20px;
     line-height: 24px;
-    width: 605px;
+    width: 587px;
+    margin-top: 16px;
+  }
+
+  .planos_btn {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    gap: 212px;
+    width: 1126px;
+    height: 595px;
+    border-radius: 0 210px 0 0;
+    padding-left: 160px;
+    position: relative;
+  }
+
+  .contato_text p {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: none;
+  }
+
+  .phone_img {
+    width: 460.29px;
+    height: 594.85px;
+    margin: 0;
+    position: absolute;
+    right: -210px;
+  }
+
+  form {
+    margin-top: 32px;
+  }
+
+  .form input {
+    width: 552px;
+  }
+
+  .form input::placeholder {
+    text-decoration-line: none;
+  }
+
+  .checkbox_content {
+    left: -30px;
+  }
+
+  .checkbox_content label::before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .checkbox1 label,
+  .checkbox2 label {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: none;
+  }
+
+  form button {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: none;
   }
 
   footer {
     padding-top: 18.4px;
-
   }
 
   .footer_links {
@@ -203,6 +290,6 @@
   }
 
   .copyright img {
-    width: 37.35px;  
+    width: 37.35px;
   }
 }
