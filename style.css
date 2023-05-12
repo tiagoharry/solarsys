@@ -85,7 +85,7 @@ h1 {
 }
 
 .arrow {
- text-align: center;
+  text-align: center;
 }
 
 .quemSomos_textContainer {
@@ -199,6 +199,7 @@ ul li {
   flex-direction: column;
   margin-top: 32px;
   margin-bottom: 32px;
+  padding-right: 16px;
 }
 
 .middle_img {
@@ -228,17 +229,14 @@ ul li {
   background: #E4E8ED;
   border-radius: 0px 108.5px 108.5px 0px;
   padding: 43px 72px;
-  margin-right: 13px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
-  color: #19171C;
 }
 
 .middle_content p {
-  width: 215px;
   font-size: 12px;
   line-height: 14px;
+  margin-right: 13px;
+  font-weight: 700;
+  color: #19171C;
 }
 
 .planos {
@@ -250,7 +248,7 @@ ul li {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 32px; 
+  margin-bottom: 32px;
 }
 
 .planos_content {
@@ -298,26 +296,27 @@ ul li {
   display: flex;
   flex-direction: column;
   margin-top: 32.33px;
+}
+
+.contato_content {
   background: #E4E8ED;
   padding-top: 31.77px;
   padding-bottom: 32px;
 }
 
-.contato_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .phone_img {
   width: 180px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .contato_text {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 16px;
 }
 
 .contato_title {
@@ -329,7 +328,7 @@ ul li {
 
 .contato_text p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
   text-align: left;
   color: #19171C;
