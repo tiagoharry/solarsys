@@ -377,9 +377,19 @@
     left: -30px;
   }
 
+  .checkbox1 input,
+.checkbox2 input {
+  width: 16px;
+    height: 16px;
+}
+
   .checkbox_content label::before {
     width: 16px;
     height: 16px;
+  }
+
+  .checkbox_content input:checked+label::before {
+    background-size: 110%;
   }
 
   .checkbox1 label,

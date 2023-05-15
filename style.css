@@ -365,7 +365,7 @@ ul li {
 
 .contato_text p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 14px;
   text-align: left;
   color: #19171C;
@@ -408,6 +408,9 @@ form {
 
 .checkbox_content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .checkbox1 input,
@@ -448,11 +451,7 @@ form {
   align-items: center;
   gap: 9.44px;
 }
-
-.checkbox1 {
-  margin-bottom: 8px;
-}
-
+  
 .checkbox1 label,
 .checkbox2 label {
   font-weight: 400;
