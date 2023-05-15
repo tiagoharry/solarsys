@@ -23,6 +23,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="desktop.css">
 
+  <script src="./js/main.js" defer></script>
+
   <title>SolarSys</title>
 </head>
 
@@ -63,7 +65,7 @@
           <img class="logo_img" src="./assets/logoSolar.svg" alt="">
           <h1>Simplificar processos é o próximo passo para a sua empresa!</h1>
           <img class="img_quemsomos_mobile" src="./assets/quemsomos_mobile.svg" alt="">
-          <a href=""><button class="btn-vamos-conversar">VAMOS CONVERSAR<img src="./assets/arrow-right.svg"
+          <a href=""><button class="btn-vamos-conversar">VAMOS CONVERSAR<img class="arrowRight" src="./assets/arrow-right.svg"
                 alt=""></button></a>
         </div>
         <div class="img_section1_desktop">
@@ -161,7 +163,7 @@
           <p>Estabelecemos parcerias com os maiores distribuidores do mercado para oferecer tabelas de preços exclusivas
             para você!
             Aproveite condições especiais e vantagens únicas ao fechar negócio conosco.</p>
-          <button class="planos_btn"> QUERO SABER MAIS <img src="./assets/arrow-right.svg" alt=""></button>
+          <button class="planos_btn"> QUERO SABER MAIS <img class="arrowRight" src="./assets/arrow-right.svg" alt=""></button>
         </div>
       </div>
     </div>
@@ -170,46 +172,49 @@
     <div class="contato">
       
       <div class="contato_content" id="contato">
-        <div class="phone_background">
-          <div class="phone_div">
-            <img class="phone_img" src="./assets/phone_desktop.png" alt="celular">
-          </div>
-          
-        </div>
         
+       
         <div class="contato_container">
-
-          <div class="contato_text">
-            <div class="contato_title">
-              <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
-              <h2>ENTRE EM CONTATO</h2>
+          <div class="phone_background">
+            <div class="phone_div">
+              <img class="phone_img" src="./assets/phone_desktop.png" alt="celular">
             </div>
-            <p>Entre para a lista de espera e seja um dos primeiros a testar</br> grátis o CRM desenvolvido para
-              integradores
-              de energia solar.</p>
           </div>
 
-          <form action="">
-
-            <div class="form">
-              <input type="text" placeholder="Nome Completo">
-              <input type="number" placeholder="Telefone">
-              <input type="email" placeholder="E-mail">
-              <input type="number" placeholder="Cnpj">
-            </div>
-            <div class="checkbox_content">
-              <div class="checkbox1">
-                <input type="checkbox" id="check" checked>
-                <label for="check">Eu concordo em receber mensagens através deste e-mail.</label>
+          <div class="contato_form">
+            <div class="contato_text">
+              <div class="contato_title">
+                <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
+                <h2>ENTRE EM CONTATO</h2>
               </div>
-              <div class="checkbox2">
-                <input type="checkbox" id="check">
-                <label for="check">Eu concordo em receber mensagens pelo meu número de telefone.</label>
-              </div>
+              <p>Entre para a lista de espera e seja um dos primeiros a testar</br> grátis o CRM desenvolvido para
+                integradores
+                de energia solar.</p>
             </div>
-
-            <button type="submit">ENVIAR</button>
-          </form>
+  
+            <form action="">
+  
+              <div class="form">
+                <input type="text" placeholder="Nome Completo">
+                <input type="tel" class="phone" maxlength="15" onkeyup="phone(event)"  placeholder="Telefone">
+                <input type="email" placeholder="E-mail">
+                <input type="text" class="cnpj" onkeyup="cnpj(event)" maxlength="18" placeholder="Cnpj">
+              </div>
+              <div class="checkbox_content">
+                <div class="checkbox1">
+                  <input type="checkbox" id="check" checked>
+                  <label for="check">Eu concordo em receber mensagens através deste e-mail.</label>
+                </div>
+                <div class="checkbox2">
+                  <input type="checkbox" id="check">
+                  <label for="check">Eu concordo em receber mensagens pelo meu número de telefone.</label>
+                </div>
+              </div>
+  
+              <button type="submit">ENVIAR</button>
+            </form>
+          </div>
+        
         </div>
       </div>
     </div>

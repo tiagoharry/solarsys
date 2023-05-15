@@ -22,6 +22,44 @@ header {
   display: none;
 }
 
+.menu-drop {
+  position: absolute;
+left: 0;
+  width: 290px;
+  height: 380px;
+  box-shadow: 0 0 10px #85888C;
+  margin: -50px 0 0 288px;
+  padding: 20px;
+  padding-top: 65px;
+  padding-right: 40px;
+  background-color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  border-radius: 0 0 0 10px;
+}
+
+
+.menu-drop nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: right;
+  transition-delay: 2s;
+}
+
+.menu-drop a{
+  text-decoration: none;
+  color: #1E1E23;
+  font-size: .8em;
+  transition: 200ms;
+  text-transform: uppercase;
+}
+
+.menu-drop a:hover{
+  color: #FEB916;
+}
 h1 {
   font-family: 'lato', sans-serif;
   font-weight: 700;
@@ -31,7 +69,6 @@ h1 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
-
 }
 
 .section1_container {
