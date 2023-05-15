@@ -329,14 +329,14 @@
     margin-left: 30px;
   }
 
-  .contato_form {
-    padding-top: 30px;
-  }
-
   .contato_text p {
     font-size: 20px;
     line-height: 24px;
     text-decoration-line: none;
+  }
+
+  .contato_form {
+    padding-top: 30px;
   }
 
   /*.phone_background {
@@ -357,7 +357,7 @@
   }
 
   form {
-    margin-top: 32px;
+    margin-top: 20px;
   }
 
   .form input {
