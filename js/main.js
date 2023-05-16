@@ -1,9 +1,25 @@
 const menu = document.querySelector('.menu-open')
 const menuDrop = document.querySelector('.menu-drop')
+const body = document.querySelector('body')
 
-menu.addEventListener('click', () => {
+/*menu.addEventListener('click', () => {
   menuDrop.classList.toggle('hide')
-})
+  body.style.background = "gray"
+  body.style.opacity = "100%"
+})*/
+
+const btnMobile = document.getElementById('btn_mobile');
+
+function toggleMenu(event){
+    if(event.type === 'touchstart') event.preventDefault();
+    const nav = document.getElementById('menu');
+
+    nav.classList.toggle('active');
+
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
 //form mask
 const phone = (event) => {

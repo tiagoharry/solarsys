@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="desktop.css">
 
   <script src="./js/main.js" defer></script>
+  <script src="./js/form.js" defer></script>
 
   <title>SolarSys</title>
 </head>
@@ -33,21 +34,29 @@
     <img src="./assets/logoHeader.svg" alt="logo SolarSys">
 
     <div class="menu_desktop">
-      <nav>
-        <a href="#">Início</a>
-        <a href="#quemSomos">Quem Somos</a>
-        <a href="#funcionalidades">funcionalidades</a>
-        <a href="#planos">planos</a>
-        <a href="#contato">Contato</a>
-        <a href="#buttonHeader">Agendar reunião</a>
+      <nav id="menu">
+        <button id="btn_mobile">
+          <span id="hamburguer"></span>
+        </button>
+        <div class="menu_links">
+          <ul>
+            <a href="#">Início</a>
+            <a href="#quemSomos">Quem Somos</a>
+            <a href="#funcionalidades">funcionalidades</a>
+            <a href="#planos">planos</a>
+            <a href="#contato">Contato</a>
+            <a href="#buttonHeader">Agendar reunião</a>
+          </ul>
+
+        </div>
       </nav>
     </div>
-    <div class="menu-mobile">
+    <!--<div class="menu-mobile">
       <img class="menu-open" src="./assets/menu.svg" alt="">
-    </div>
+    </div>!-->
   </header>
 
-  <div class="menu-drop hide">
+  <!--<div class="menu-drop hide">
     <nav>
       <a href="">Início</a>
       <a href="#quemSomos">Quem Somos</a>
@@ -56,7 +65,7 @@
       <a href="#contato">Contato</a>
       <a href="#buttonHeader">Agendar reunião</a>
     </nav>
-  </div>
+  </div>!-->
 
   <main>
     <div class="section1">
@@ -65,8 +74,8 @@
           <img class="logo_img" src="./assets/logoSolar.svg" alt="">
           <h1>Simplificar processos é o próximo passo para a sua empresa!</h1>
           <img class="img_quemsomos_mobile" src="./assets/quemsomos_mobile.svg" alt="">
-          <a href=""><button class="btn-vamos-conversar">VAMOS CONVERSAR<img class="arrowRight" src="./assets/arrow-right.svg"
-                alt=""></button></a>
+          <a href=""><button class="btn-vamos-conversar">VAMOS CONVERSAR<img class="arrowRight"
+                src="./assets/arrow-right.svg" alt=""></button></a>
         </div>
         <div class="img_section1_desktop">
           <figure class="painelSolar">
@@ -104,7 +113,7 @@
     </div>
 
     <div class="funcionalidades" id="funcionalidades">
-      
+
       <div class="funcionalidades_container">
         <div class="funcionalidade_content">
           <div class="funcionalidades_title">
@@ -128,7 +137,7 @@
             <li><img src="./assets/imgList_vendas.svg" alt="">Relatório de vendas</li>
           </ul>
         </div>
-       
+
       </div>
       <button class="btn-comece-agora">COMECE AGORA MESMO</button>
     </div>
@@ -163,17 +172,18 @@
           <p>Estabelecemos parcerias com os maiores distribuidores do mercado para oferecer tabelas de preços exclusivas
             para você!
             Aproveite condições especiais e vantagens únicas ao fechar negócio conosco.</p>
-          <button class="planos_btn"> QUERO SABER MAIS <img class="arrowRight" src="./assets/arrow-right.svg" alt=""></button>
+          <button class="planos_btn"> QUERO SABER MAIS <img class="arrowRight" src="./assets/arrow-right.svg"
+              alt=""></button>
         </div>
       </div>
     </div>
 
 
     <div class="contato">
-      
+
       <div class="contato_content" id="contato">
-        
-       
+
+
         <div class="contato_container">
           <div class="phone_background">
             <div class="phone_div">
@@ -191,12 +201,12 @@
                 integradores
                 de energia solar.</p>
             </div>
-  
+
             <form action="">
-  
+
               <div class="form">
                 <input type="text" placeholder="Nome Completo">
-                <input type="tel" class="phone" maxlength="15" onkeyup="phone(event)"  placeholder="Telefone">
+                <input type="tel" class="phone" maxlength="15" onkeyup="phone(event)" placeholder="Telefone">
                 <input type="email" placeholder="E-mail">
                 <input type="text" class="cnpj" onkeyup="cnpj(event)" maxlength="18" placeholder="Cnpj">
               </div>
@@ -210,11 +220,11 @@
                   <label for="check">Eu concordo em receber mensagens pelo meu número de telefone.</label>
                 </div>
               </div>
-  
+
               <button type="submit">ENVIAR</button>
             </form>
           </div>
-        
+
         </div>
       </div>
     </div>

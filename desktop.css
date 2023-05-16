@@ -36,23 +36,49 @@
     margin-bottom: 0;
   }
 
-  .menu_desktop {
-    display: block;
+  #btn_mobile {
+    display: none;
   }
 
-  .menu_desktop nav {
+  #menu {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+   align-items: center;
     gap: 32px;
   }
 
-  .menu_desktop a {
+  .menu_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 0;
+    padding-top: 0;
+    margin: 0;
+    height: auto;
+    width:max-content;
+    box-shadow: none;
+    visibility: visible;
+    padding: 0;
+    background-color: transparent;
+    left: auto;
+  }
+
+  .menu_links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .menu_links a {
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
     line-height: 19px;
     color: #13273B;
     transition: .5s ease;
+    visibility: visible;
   }
 
   .menu_desktop a:hover {
@@ -69,14 +95,13 @@
     font-size: 16px;
     border-radius: 20px;
     border-style: none;
-    height: 40px;
     cursor: pointer;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 0px 24px 0px 24px;
-    gap: 8px;
+    align-items: center;*/
+    padding: 12px 24px;
+
   }
 
   .menu_desktop a:last-child:hover {
@@ -99,7 +124,7 @@
   }
 
   .section1_title {
-    align-items:flex-start;
+    align-items: flex-start;
     margin-top: 108px;
   }
 
@@ -180,19 +205,19 @@
   }
 
   .funcionalidades {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .funcionalidades_container {
-   align-items: self-start;
+    align-items: self-start;
   }
 
   .funcionalidade_content {
-   justify-content: left;
-   align-items:start;
+    justify-content: left;
+    align-items: start;
   }
 
   .funcionalidade_content p {
@@ -314,7 +339,7 @@
 
   .contato_content {
     padding-bottom: 0;
-    padding-top: 0; 
+    padding-top: 0;
     background-size: contain;
   }
 
@@ -373,10 +398,10 @@
   }
 
   .checkbox1 input,
-.checkbox2 input {
-  width: 16px;
+  .checkbox2 input {
+    width: 16px;
     height: 16px;
-}
+  }
 
   .checkbox_content label::before {
     width: 16px;
