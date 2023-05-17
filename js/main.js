@@ -15,7 +15,7 @@ function toggleMenu(event){
     if(event.type === 'touchstart') event.preventDefault();
     const nav = document.getElementById('menu');
     
-
+    link.style.transform = "translate(-100%, 0)";
     nav.classList.toggle('active');
 }
 
