@@ -385,6 +385,10 @@
     margin-top: 20px;
   }
 
+  #erro {
+    font-size: 20px;
+  }
+
   .form input {
     width: 552px;
   }
