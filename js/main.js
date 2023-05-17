@@ -54,13 +54,10 @@ const cnpjMask = (value) => {
   return value
 }
 
-
-
+//form input
 const submit = document.querySelector('#submit')
 
 submit.addEventListener('click', () => {
-
-
   erro()
 })
 
@@ -70,6 +67,7 @@ function erro() {
   const cnpjValue = document.querySelector('.cnpj').value
   const nameValue = document.querySelector('.name').value
   const emailValue = document.querySelector('.email').value
+  const form = document.querySelector('#formContent')
 
   if (nameValue === 0 || emailValue.length === 0) {
     erro.style.display = "none"
@@ -79,18 +77,16 @@ function erro() {
     erro.style.display = "block"
     erro.textContent = "Telefone incompleto"
   }
-
+  
   else if (cnpjValue.length < 18) {
     erro.style.display = "block"
     erro.textContent = "Cnpj incompleto"
   }
 
-  else if (input === 0) {
-    erro.style.display = "block"
-    erro.textContent = "Campo incompleto"
-  }
   else {
     erro.style.display = "none"
     alert('Formulário enviado')
+    form.reset()
+
   }
 }
