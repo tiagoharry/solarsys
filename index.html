@@ -203,12 +203,12 @@
             </div>
 
             <form action="">
-
+              <p id="erro"></p>
               <div class="form">
-                <input type="text" placeholder="Nome Completo">
-                <input type="tel" class="phone" maxlength="15" onkeyup="phone(event)" placeholder="Telefone">
-                <input type="email" placeholder="E-mail">
-                <input type="text" class="cnpj" onkeyup="cnpj(event)" maxlength="18" placeholder="Cnpj">
+                <input type="text" class="name" placeholder="Nome Completo" required>
+                <input type="tel" class="phone" maxlength="15" onkeyup="phone(event)" placeholder="Telefone" required>
+                <input type="email" class="email" placeholder="E-mail" required>
+                <input type="text" class="cnpj" onkeyup="cnpj(event)" maxlength="18" placeholder="Cnpj" required>
               </div>
               <div class="checkbox_content">
                 <div class="checkbox1">
@@ -221,7 +221,7 @@
                 </div>
               </div>
 
-              <button type="submit">ENVIAR</button>
+              <button type="submit" id="submit">ENVIAR</button>
             </form>
           </div>
 

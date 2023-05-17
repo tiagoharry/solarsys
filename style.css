@@ -479,6 +479,11 @@ form {
   align-items: center;
 }
 
+#erro {
+  color: red;
+  display: none;
+}
+
 .form {
   margin-top: 16px;
   margin-bottom: 16px;

@@ -8,15 +8,16 @@ const body = document.querySelector('body')*/
   body.style.opacity = "100%"
 })*/
 
+//mobile button
 const btnMobile = document.getElementById('btn_mobile');
 const link = document.querySelector('.menu_links');
 
-function toggleMenu(event){
-    if(event.type === 'touchstart') event.preventDefault();
-    const nav = document.getElementById('menu');
-    
-    link.style.transform = "translate(-100%, 0)";
-    nav.classList.toggle('active');
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('menu');
+
+  link.style.transform = "translate(-100%, 0)";
+  nav.classList.toggle('active');
 }
 
 btnMobile.addEventListener('click', toggleMenu);
@@ -32,9 +33,9 @@ const phone = (event) => {
 
 const phoneMask = (value) => {
   if (!value) return ""
-  value = value.replace(/\D/g,'')
-  value = value.replace(/(\d{2})(\d)/,"($1) $2")
-  value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+  value = value.replace(/\D/g, '')
+  value = value.replace(/(\d{2})(\d)/, "($1) $2")
+  value = value.replace(/(\d)(\d{4})$/, "$1-$2")
   return value
 }
 
@@ -48,7 +49,48 @@ const cnpjMask = (value) => {
   value = value.replace(/^(\d{2})(\d)/, "$1.$2")
   value = value.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3")
   value = value.replace(/\.(\d{3})(\d)/, ".$1/$2")
-  value = value.replace(/(\d{4})(\d)/, "$1-$2") 
+  value = value.replace(/(\d{4})(\d)/, "$1-$2")
 
   return value
+}
+
+
+
+const submit = document.querySelector('#submit')
+
+submit.addEventListener('click', () => {
+
+
+  erro()
+})
+
+function erro() {
+  const erro = document.querySelector('#erro')
+  const phoneValue = document.querySelector('.phone').value
+  const cnpjValue = document.querySelector('.cnpj').value
+  const nameValue = document.querySelector('.name').value
+  const emailValue = document.querySelector('.email').value
+
+  if (nameValue === 0 || emailValue.length === 0) {
+    erro.style.display = "none"
+  }
+
+  else if (phoneValue.length < 15) {
+    erro.style.display = "block"
+    erro.textContent = "Telefone incompleto"
+  }
+
+  else if (cnpjValue.length < 18) {
+    erro.style.display = "block"
+    erro.textContent = "Cnpj incompleto"
+  }
+
+  else if (input === 0) {
+    erro.style.display = "block"
+    erro.textContent = "Campo incompleto"
+  }
+  else {
+    erro.style.display = "none"
+    alert('Formulário enviado')
+  }
 }
