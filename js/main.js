@@ -21,8 +21,8 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
-/*link.addEventListener('click', toggleMenu);
-link.addEventListener('touchstart', toggleMenu);*/
+link.addEventListener('click', toggleMenu);
+/*link.addEventListener('touchstart', toggleMenu);*/
 
 //form mask
 const phone = (event) => {
