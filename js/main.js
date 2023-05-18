@@ -16,14 +16,13 @@ function toggleMenu(event) {
   if (event.type === 'touchstart') event.preventDefault();
   const nav = document.getElementById('menu');
 
-  link.style.transform = "translate(-100%, 0)";
   nav.classList.toggle('active');
 }
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
-link.addEventListener('click', toggleMenu);
-link.addEventListener('touchstart', toggleMenu);
+/*link.addEventListener('click', toggleMenu);
+link.addEventListener('touchstart', toggleMenu);*/
 
 //form mask
 const phone = (event) => {
