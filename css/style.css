@@ -5,6 +5,11 @@
   font-family: 'lato', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -81,7 +86,6 @@ header {
   background-color: #FFFFFF;
   border-radius: 0 0 10px 0;
   -webkit-font-smoothing: antialiased;
-  
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -89,9 +93,7 @@ header {
 }
 
 #menu.active .menu_links {
-  transform: none;
-  
-  
+  transform: none; 
 }
 
 .menu_links a {
@@ -228,7 +230,6 @@ h2 {
 
 .funcionalidades {
   margin-top: 30px;
-
 }
 
 .funcionalidades_container {
@@ -268,6 +269,12 @@ ul li {
   gap: 16px;
 }
 
+.btn_funcionalidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn-comece-agora {
   background-color: #13273B;
   color: #ffff;
@@ -282,7 +289,7 @@ ul li {
   align-items: center;
   padding: 0px 24px;
   gap: 8px;
-  margin: 0 auto;
+  text-decoration: none;
 }
 
 .middle {
