@@ -27,10 +27,6 @@ header {
   display: none;
 }
 
-/*.menu_desktop {
-  display: none;
-}*/
-
 #btn_mobile {
   display: flex;
   cursor: pointer;
@@ -102,7 +98,7 @@ header {
 
 .menu_links a {
   color: #1E1E23;
-  font-size: .8em;
+  font-size: .8rem;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -163,7 +159,7 @@ h1 {
 .btn-vamos-conversar {
   background-color: #13273B;
   color: #ffff;
-  font-size: 12px;
+  font-size: 1.2rem;
   border-radius: 20px;
   border-style: none;
   height: 40px;
@@ -209,14 +205,14 @@ a {
 h2 {
   font-family: 'lato', sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #13273B;
 }
 
 .quemsomosparagraph {
   font-family: 'lato', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 14px;
   color: #19171C;
   margin-bottom: 40px;
@@ -251,7 +247,7 @@ h2 {
 }
 
 .funcionalidade_content p {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #19171C;
   margin-bottom: 16px;
 }
@@ -263,7 +259,7 @@ h2 {
 ul li {
   font-family: 'lato', sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #19171C;
   list-style: none;
   text-decoration: underline;
@@ -282,7 +278,7 @@ ul li {
 .btn-comece-agora {
   background-color: #13273B;
   color: #ffff;
-  font-size: 12px;
+  font-size: 1.2rem;
   border-radius: 20px;
   border-style: none;
   height: 40px;
@@ -335,7 +331,7 @@ ul li {
 }
 
 .middle_content p {
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 14px;
   margin-right: 13px;
   font-weight: 700;
@@ -370,7 +366,7 @@ ul li {
 }
 
 .planos_content p {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 19px;
   font-weight: 400;
   text-align: justify;
@@ -382,7 +378,7 @@ ul li {
 .planos_btn {
   background-color: #13273B;
   color: #ffff;
-  font-size: 12px;
+  font-size: 1.2rem;
   border-radius: 20px;
   border-style: none;
   height: 40px;
@@ -431,7 +427,7 @@ ul li {
 
 .contato_text p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 14px;
   text-align: left;
   color: #19171C;
@@ -448,7 +444,7 @@ form {
 
 #erro {
   color: red;
-  font-size: 12px;
+  font-size: 1.2rem;
   margin-top: 12px;
   display: none;
 }
@@ -532,7 +528,7 @@ input:focus {
 .checkbox1 label,
 .checkbox2 label {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 1rem;
   line-height: 12px;
   text-decoration-line: underline;
   color: #141927;
@@ -543,7 +539,7 @@ form button {
   border-radius: 30px;
   padding: 15.5px 24px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 14px;
   text-decoration-line: underline;
   color: #FFFFFF;
@@ -577,14 +573,14 @@ footer {
 
 .footer_links a {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 1rem;
   line-height: 12px;
   color: #FFFFFF;
   text-decoration-line: underline;
 }
 
 .copyright {
-  font-size: 8px;
+  font-size: .8rem;
   line-height: 10px;
   color: #FFFFFF;
   text-decoration-line: underline;

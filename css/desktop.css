@@ -26,7 +26,7 @@
   }
 
   h2 {
-    font-size: 31px;
+    font-size: 3.1rem;
     line-height: 37px;
   }
 
@@ -92,7 +92,7 @@
 
   .menu_links a {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
     text-transform: uppercase;
     line-height: 19px;
     color: #13273B;
@@ -111,7 +111,7 @@
   .menu_desktop a:last-child {
     background-color: #13273B;
     color: #ffff;
-    font-size: 16px;
+    font-size: 1.6rem;
     border-radius: 20px;
     border-style: none;
     cursor: pointer;
@@ -153,7 +153,7 @@
   .section1_title h1 {
     width: 361px;
     text-align: justify;
-    font-size: 31px;
+    font-size: 3.1rem;
     line-height: 37px;
   }
 
@@ -182,7 +182,7 @@
 
   .sol {
     top: 100px;
-    right: 120px;
+    right: 80px;
     position: absolute;
     animation: spin 20s linear infinite;
 
@@ -201,7 +201,7 @@
   }
 
   .arrow {
-    margin-top: 190px;
+    margin-top: 52px;
   }
 
   .quemSomos_textContainer {
@@ -221,7 +221,7 @@
 
   .quemSomos_textContainer p {
     width: 510px;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 24px;
   }
 
@@ -247,7 +247,7 @@
   }
 
   .funcionalidade_content p {
-    font-size: 20px;
+    font-size: 2rem;
     margin-bottom: 48px;
   }
 
@@ -270,7 +270,7 @@
   }
 
   .btn-comece-agora {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-top: 8px;
     margin-bottom: 110px;
   }
@@ -300,7 +300,7 @@
   }
 
   .middle_content p {
-    font-size: 31px;
+    font-size: 3.1rem;
     line-height: 37.2px;
     margin-left: 345px;
     text-align: justify;
@@ -347,7 +347,7 @@
   }
 
   .planos_content p {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 24px;
     width: 587px;
     margin-top: 16px;
@@ -385,17 +385,19 @@
     padding-bottom: 32px;
     padding-left: 20px;
     padding-right: 70px;
-    margin-left: 20px;
+    margin-left: 50px;
+    height: 595px;
   }
 
   .contato_text p {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 24px;
     text-decoration-line: none;
   }
 
   .contato_form {
     padding-top: 30px;
+    padding-left: 40px;
   }
 
   .phone_img {
@@ -408,7 +410,7 @@
   }
 
   #erro {
-    font-size: 15px;
+    font-size: 1.5rem;
   }
 
   .form input {
@@ -448,7 +450,7 @@
 
   form button {
     margin-top: 16px;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 19px;
     text-decoration-line: none;
     cursor: pointer;
@@ -467,11 +469,11 @@
 
   .footer_links a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .copyright {
-    font-size: 10px;
+    font-size: 1rem;
     text-decoration: none;
   }
 
