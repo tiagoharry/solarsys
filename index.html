@@ -23,9 +23,12 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/desktop.css">
 
+  <!--<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js" defer></script>
+  <script src="./js/videoControls.js" defer></script>!-->
   <script src="./js/main.js" defer></script>
   <script src="./js/form.js" defer></script>
-
+ 
+  
   <title>SolarSys</title>
 </head>
 
@@ -38,15 +41,15 @@
         <button id="btn_mobile">
           <span id="hamburguer"></span>
         </button>
-       
-          <ul class="menu_links">
-            <a href="#">Início</a>
-            <a href="#quemSomos">Quem Somos</a>
-            <a href="#funcionalidades">funcionalidades</a>
-            <a href="#planos">planos</a>
-            <a href="#contato">Contato</a>
-            <a href="mailto:mailto:contato@plataformasolarsys.com.br">Agendar reunião</a>
-          </ul>   
+
+        <ul class="menu_links">
+          <a href="#">Início</a>
+          <a href="#quemSomos">Quem Somos</a>
+          <a href="#funcionalidades">funcionalidades</a>
+          <a href="#planos">planos</a>
+          <a href="#contato">Contato</a>
+          <a href="mailto:mailto:contato@plataformasolarsys.com.br">Agendar reunião</a>
+        </ul>
       </nav>
     </div>
   </header>
@@ -58,8 +61,10 @@
           <img class="logo_img" src="./assets/logoSolar.svg" alt="">
           <h1>Simplificar processos é o próximo passo para a sua empresa!</h1>
           <img class="img_quemsomos_mobile" src="./assets/quemsomos_mobile.svg" alt="">
-          <a href="https://api.whatsapp.com/send?phone=+5555997302037&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."><button class="btn-vamos-conversar">VAMOS CONVERSAR<img class="arrowRight"
-                src="./assets/arrow-right.svg" alt=""></button></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=+5555997302037&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos."><button
+              class="btn-vamos-conversar">VAMOS CONVERSAR<img class="arrowRight" src="./assets/arrow-right.svg"
+                alt=""></button></a>
         </div>
         <div class="img_section1_desktop">
           <figure class="painelSolar">
@@ -121,14 +126,15 @@
               <li><img src="./assets/imgList_vendas.svg" alt="">Relatório de vendas</li>
             </ul>
           </div>
-  
+
         </div>
         <div class="btn_funcionalidades">
-          <a class="btn-comece-agora" href="mailto:mailto:contato@plataformasolarsys.com.br" target="_blank">COMECE AGORA MESMO</a>
-        </div>   
+          <a class="btn-comece-agora" href="mailto:mailto:contato@plataformasolarsys.com.br" target="_blank">COMECE
+            AGORA MESMO</a>
+        </div>
       </div>
     </section>
-   
+
 
     <div class="middle">
       <div class="middle_img">
@@ -147,25 +153,31 @@
     </div>
 
     <div class="planos" id="planos">
-      <img class="youtubeDesktop_img" src="./assets/youtube.png" alt="">
-      <div class="planos_container">
+      <video class="youtubeDesktop_img" id="video" poster="./assets/previa_video.png" controls>
+        <source src="./assets/video.mp4" type="video/mp4">
+      </video>
 
+      <div class="planos_container">
         <div class="planos_title">
           <img class="img_ellipse" src="./assets/Ellipse 2.svg" alt="">
           <h2>ACOMPANHE NOSSOS PLANOS</h2>
         </div>
 
+
         <div class="planos_content">
-          <img class="youtube_img" src="./assets/youtube.png" alt="">
+          <video class="youtube_img" id="video" src="./assets/video.mp4" controls poster="./assets/previa_video.png">
+            <source src="./assets/video.mp4" type="">
+          </video>
           <p>Estabelecemos parcerias com os maiores distribuidores do mercado para oferecer tabelas de preços exclusivas
             para você!
             Aproveite condições especiais e vantagens únicas ao fechar negócio conosco.</p>
 
-           <div class="btn_planos_div">
-            <a class="planos_btn" href="https://api.whatsapp.com/send?phone=+5555997302037&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos.">QUERO SABER MAIS <img class="arrowRight" src="./assets/arrow-right.svg"
-              alt="" target="_blank"></a>
-           </div> 
-          
+          <div class="btn_planos_div">
+            <a class="planos_btn"
+              href="https://api.whatsapp.com/send?phone=+5555997302037&text=Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos.">QUERO
+              SABER MAIS <img class="arrowRight" src="./assets/arrow-right.svg" alt="" target="_blank"></a>
+          </div>
+
         </div>
       </div>
     </div>
@@ -182,7 +194,7 @@
               <img class="phone_img" src="./assets/phone_desktop.png" alt="celular">
             </div>
           </div>
-         
+
           <div class="contato_form">
             <div class="contato_text">
               <div class="contato_title">
