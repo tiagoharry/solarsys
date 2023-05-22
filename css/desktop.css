@@ -126,14 +126,16 @@
 
   .section1 {
     padding-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
   }
 
   .section1_container {
     display: flex;
     flex-direction: row;
-    gap: 132px;
-    margin-bottom: -150px;
-    padding-left: 110px;
+    gap: 80px;
+    padding-left: 10px;
     position: relative;
   }
 
@@ -145,6 +147,7 @@
   .section1_title {
     align-items: flex-start;
     margin-top: 108px;
+    margin-right: 600px;
   }
 
   .section1_title h1 {
@@ -172,10 +175,9 @@
 
   .background {
     position: absolute;
-    max-width: auto;
-    max-height: 100%;
     right: 0;
     top: 0;
+    width: 62%;
   }
 
   .sol {
@@ -183,12 +185,12 @@
     right: 120px;
     position: absolute;
     animation: spin 20s linear infinite;
-    max-width: 120px;
+   
   }
 
   .painel {
     position: absolute;
-    top: 128px;
+    top: 158px;
     right: 237px;
     max-width: auto;
     max-height: 80%;
@@ -232,6 +234,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 40px;
   }
 
   .funcionalidades_container {
@@ -357,24 +360,32 @@
 
   .contato {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    
   }
 
   .contato_content {
     padding-bottom: 0;
     padding-top: 0;
-    background-size: contain;
+    background: none;
   }
 
   .contato_container {
-    display: flex;
-    justify-content: center;
+    display: flex;  
     flex-direction: row-reverse;
-    gap: 150px;
-    /*padding-left: 160px;*/
-    /*padding-right: 102px;*/
     padding-bottom: 0;
-    margin-left: 30px;
+    gap: 32px;
+  }
+
+  .contato_form {
+    background-color: #E4E8ED;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-bottom: 32px;
+   padding-left: 20px;
+   padding-right: 70px;
+   margin-left: 20px;
   }
 
   .contato_text p {
@@ -386,18 +397,6 @@
   .contato_form {
     padding-top: 30px;
   }
-
-  /*.phone_background {
-    background: #E4E8ED;
-    background-size: 50px auto;
-    border-radius: 0 208px 0 0;
-    width: 20px;
-  }*/
-
-  /*.phone_div {
-    width: 50%;
-    height: auto;
-  }*/
 
   .phone_img {
     height: auto;
