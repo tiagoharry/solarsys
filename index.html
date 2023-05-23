@@ -22,11 +22,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/desktop.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
 
-  <!--<script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js" defer></script>
-  <script src="./js/videoControls.js" defer></script>!-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
   <script src="./js/main.js" defer></script>
-  <script src="./js/form.js" defer></script>
+  <!--<script src="./js/form.js" defer></script>!-->
  
   
   <title>SolarSys</title>
@@ -226,6 +226,11 @@
               </div>
 
               <button type="submit" id="submit">ENVIAR</button>
+
+              <dialog>
+                <p>Formulário enviado!</p>
+                <button class="button_modal">Ok</button>
+              </dialog>
             </form>
           </div>
 

@@ -84,8 +84,18 @@ function erro() {
 
   else {
     erro.style.display = "none"
-    alert('Formulário enviado')
+    modal()
     form.reset()
 
   }
+}
+
+function modal() {
+  const modal = document.querySelector('dialog')
+  const buttonModal = document.querySelector('.button_modal') 
+
+  modal.showModal()
+  buttonModal.onclick = function () {
+    modal.close()
+  } 
 }

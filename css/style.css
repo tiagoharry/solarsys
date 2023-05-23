@@ -547,6 +547,15 @@ form button {
   border: none;
 }
 
+dialog {
+  border: none;
+  padding: 30px 100px;
+  text-align: center;
+  margin: 0 auto;
+  top: 300px;
+  font-size: 1.2rem;
+}
+
 footer {
   background: #13273B;
   display: flex;

@@ -456,6 +456,10 @@
     cursor: pointer;
   }
 
+  dialog {
+   font-size: 1.6rem;
+  }
+
   footer {
     padding-top: 18.4px;
   }
