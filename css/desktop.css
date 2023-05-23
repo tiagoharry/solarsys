@@ -400,9 +400,14 @@
     padding-left: 40px;
   }
 
+  .phone_div {
+
+  }
+
   .phone_img {
     height: auto;
-    width: 460px;
+    width: 420px;
+    margin-top: 50px;
   }
 
   form {
