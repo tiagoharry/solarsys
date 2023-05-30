@@ -4,18 +4,6 @@
     min-width: 100vw;
   }
 
-  ::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #FEB916;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #1E1E23;
-  }
-
   .menu-mobile {
     display: none;
   }
@@ -125,7 +113,7 @@
   }
 
   .section1 {
-    padding-top: 70px;
+    padding-top: 149px;
     display: flex;
     justify-content: space-around;
     margin-left: 40px;
@@ -181,8 +169,8 @@
   }
 
   .sol {
-    top: 100px;
-    right: 80px;
+    top: 20px;
+    right: -20px;
     position: absolute;
     animation: spin 20s linear infinite;
 
@@ -190,10 +178,10 @@
 
   .painel {
     position: absolute;
-    top: 158px;
-    right: 237px;
+    top: 105px;
+    right: 80px;
     max-width: auto;
-    max-height: 80%;
+   
   }
 
   .btn-vamos-conversar {
