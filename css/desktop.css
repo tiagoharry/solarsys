@@ -173,6 +173,7 @@
     right: -20px;
     position: absolute;
     animation: spin 20s linear infinite;
+    width: 12%;
 
   }
 
@@ -181,7 +182,7 @@
     top: 105px;
     right: 80px;
     max-width: auto;
-   
+   width: 50%;
   }
 
   .btn-vamos-conversar {
