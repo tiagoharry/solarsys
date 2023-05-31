@@ -18,7 +18,8 @@
     line-height: 37px;
   }
 
-  button, .button {
+  button,
+  .button {
     transition: .3s ease;
   }
 
@@ -26,7 +27,8 @@
     fill: #13273B;
   }
 
-  button:hover, .button:hover {
+  button:hover,
+  .button:hover {
     background-color: #FEB916;
     color: #13273B;
   }
@@ -34,11 +36,7 @@
   header {
     padding: 23px 104px 23px 110px;
     margin-bottom: 0;
-    position: fixed;
     right: 0;
-    z-index: 1;
-    background-color: #ffff;
-    width: 100%;
   }
 
   #btn_mobile {
@@ -182,7 +180,7 @@
     top: 105px;
     right: 80px;
     max-width: auto;
-   width: 50%;
+    width: 50%;
   }
 
   .btn-vamos-conversar {
@@ -389,10 +387,6 @@
     padding-left: 40px;
   }
 
-  .phone_div {
-
-  }
-
   .phone_img {
     height: auto;
     width: 420px;
@@ -451,7 +445,7 @@
   }
 
   dialog {
-   font-size: 1.6rem;
+    font-size: 1.6rem;
   }
 
   footer {
