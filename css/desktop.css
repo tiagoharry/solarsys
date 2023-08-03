@@ -346,6 +346,21 @@
     line-height: 19px;
   }
 
+  .table {
+    display: flex;
+    justify-content: center;
+  }
+
+  th {
+  text-aling: left;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+table, th, td {
+  border: 10px solid white;
+}
+
   .contato {
     display: flex;
     align-items: center;
