@@ -76,7 +76,7 @@ function erro() {
     erro.style.display = "block"
     erro.textContent = "Telefone incompleto"
   }
-  
+
   else if (cnpjValue.length < 18) {
     erro.style.display = "block"
     erro.textContent = "Cnpj incompleto"
@@ -86,16 +86,15 @@ function erro() {
     erro.style.display = "none"
     modal()
     form.reset()
-
   }
 }
 
 function modal() {
   const modal = document.querySelector('dialog')
-  const buttonModal = document.querySelector('.button_modal') 
+  const buttonModal = document.querySelector('.button_modal')
 
   modal.showModal()
   buttonModal.onclick = function () {
     modal.close()
-  } 
+  }
 }
