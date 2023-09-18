@@ -172,7 +172,6 @@ h1 {
 
 .painel {
   width: 179.33px;
-
 }
 
 .btn-vamos-conversar {
@@ -373,6 +372,39 @@ ul li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.table_col1 {
+  padding-bottom: 0;
+}
+
+
+.tableTitle {
+  color: #13273B;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.tableSubTitle {
+  text-align: left;
+
+}
+
+th {
+  color: #1D3451;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.tableButton {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  background: #13273B;
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
 }
 
 .youtubeDesktop_img {
