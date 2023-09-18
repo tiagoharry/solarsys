@@ -374,10 +374,24 @@ ul li {
   justify-content: center;
 }
 
+table {
+  width: 1120px;
+}
+
 .table_col1 {
   padding-bottom: 0;
 }
 
+.border {
+  border-radius: 24px;
+  border: 1px dashed #13273B;
+  width: 186px;
+  height: 1180px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 485px;
+  
+}
 
 .tableTitle {
   color: #13273B;
@@ -387,7 +401,7 @@ ul li {
 
 .tableSubTitle {
   text-align: left;
-
+  font-weight: 400;
 }
 
 th {
