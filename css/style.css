@@ -374,54 +374,6 @@ ul li {
   justify-content: center;
 }
 
-table {
-  width: 1120px;
-  margin-bottom: 50px;
-}
-
-.table_col1 {
-  padding-bottom: 0;
-}
-
-.border {
-  border-radius: 24px;
-  border: 1px dashed #13273B;
-  width: 186px;
-  height: 1180px;
-  position: absolute;
-  margin-top: 20px;
-  margin-left: 485px;
-  
-}
-
-.tableTitle {
-  color: #13273B;
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-.tableSubTitle {
-  text-align: left;
-  font-weight: 400;
-}
-
-th {
-  color: #1D3451;
-  font-size: 16px;
-  padding: 8px;
-}
-
-.tableButton {
-  height: 40px;
-  padding: 0px 24px;
-  border-radius: 20px;
-  background: #13273B;
-  color: #FFF;
-  font-size: 1.6rem;
-  font-weight: 700;
-  border: none;
-}
-
 .youtubeDesktop_img {
   display: none;
 }
@@ -454,6 +406,91 @@ th {
   align-items: center;
   padding: 0px 24px 0px 24px;
   gap: 8px;
+}
+
+.menu-sanfona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-sanfona li ul{
+  display:none;
+}
+.menu-sanfona li:focus ul{
+  display:block;
+}
+
+.plansOptions {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 31px;
+}
+
+.acordeon {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.plansOptions_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 52px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  //margin-bottom: 16px;
+}
+
+.plansOptions_title:focus ul{
+  display: block;
+}
+
+.plansOptions_title h2, .plansOptions h2 {
+  font-size: 2rem;
+}
+
+.plansOptions li {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1D3451;
+  padding: 8px 4px;
+}
+
+.plansOptions_list {
+  //display: none;
+}
+
+.plansOptions_list li:nth-child(odd) {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.plansOptions h2 {
+  font-weight: 900;
+}
+
+.tableButton {
+  height: 40px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  background: #13273B;
+  color: #FFF;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.table {
+  display: none;
 }
 
 .contato {
