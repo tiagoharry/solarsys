@@ -408,72 +408,120 @@ ul li {
   gap: 8px;
 }
 
-.menu-sanfona {
+.listOption {
+  margin-top: 21px;
+}
+
+.link {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-.menu-sanfona li ul{
-  display:none;
-}
-.menu-sanfona li:focus ul{
-  display:block;
+ul {
+  list-style: none;
 }
 
-.plansOptions {
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- margin-top: 31px;
+.accordion-menu {
+  overflow: hidden;
 }
 
-.acordeon {
- display: flex;
- flex-direction: column;
- align-items: center;
-}
-
-.plansOptions_title {
+.dropdown {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 52px;
+  color: #13273B;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 16px;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
-  padding: 16px;
-  //margin-bottom: 16px;
+  
+  width: 328px;
+  transition: all 0.4s ease-out;
 }
 
-.plansOptions_title:focus ul{
+.dropdown2 {
+  width: 328px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown2 h2 {
+  color: #13273B;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dropdown .arrowDown {
+  transition: transform 0.2s ease-in-out;
+}
+
+.submenuItems {
+  display: none;
+  width: 328px;
+  transition: all 2s ease-in-out;
+}
+
+.accordion-menu li.active .submenuItems{
   display: block;
 }
 
-.plansOptions_title h2, .plansOptions h2 {
+.submenuItems li {
+  display: block;
+  color: #1D3451;
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: all 0.2s ease-out;
+  padding: 8px;
+}
+
+.submenuItems h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.submenuItems li:nth-child(odd) {
+  border-radius: 4px;
+  background: #F4F4F4;
+}
+
+.listOption_priceContainer {
+  text-align: center;
+}
+
+.listOption_price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  //flex-direction: column;
+}
+
+.listOption_price3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.listOption_price p {
   font-size: 2rem;
 }
 
-.plansOptions li {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #1D3451;
-  padding: 8px 4px;
-}
-
-.plansOptions_list {
-  //display: none;
-}
-
-.plansOptions_list li:nth-child(odd) {
-  background-color: #f2f2f2;
-  border-radius: 4px;
-}
-
-.plansOptions h2 {
-  font-weight: 900;
+.listOption_priceContainer button {
+  width: 328px;
 }
 
 .tableButton {
@@ -496,7 +544,7 @@ ul li {
 .contato {
   display: flex;
   flex-direction: column;
-  margin-top: 32.33px;
+  margin-top: 32px;
 }
 
 .contato_content {
