@@ -18,7 +18,7 @@
   `
 
   // @todo
-  fetch('https://hooks.slack.com/services/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', {
+  fetch('contato@plataformasolarsys.com', {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded"

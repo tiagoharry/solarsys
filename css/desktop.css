@@ -372,14 +372,17 @@
     position: absolute;
     margin-top: 20px;
     margin-left: 485px;
+    z-index: 1;
   }
+
+ 
 
   .tableTitle {
     color: #13273B;
     font-size: 2rem;
     font-weight: 700;
   }
-  
+
   .tableSubTitle {
     text-align: left;
     font-weight: 400;
@@ -401,7 +404,8 @@
     padding-bottom: 0;
   }
 
-  .table_col1, .table_col15 {
+  .table_col1,
+  .table_col15 {
     background-color: white;
   }
 
@@ -409,21 +413,28 @@
     font-size: 2rem;
   }
 
-table, th, td {
-  border: 10px solid white;
-}
+  table,
+  th,
+  td {
+    border: 10px solid white;
+  }
 
-.tableButton {
-  height: 40px;
-  padding: 0px 24px;
-  border-radius: 20px;
-  background: #13273B;
-  color: #FFF;
-  font-size: 1.6rem;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-}
+  th button {
+    height: 40px;
+    padding: 0px 24px;
+    border-radius: 20px;
+    background: #13273B;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    //z-index: 3;
+  }
+
+  tr {
+   z-index: 5;
+  }
 
   .contato {
     display: flex;
