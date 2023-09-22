@@ -226,12 +226,7 @@
   }
 
   .funcionalidades_container {
-    align-items: self-start;
-  }
-
-  .funcionalidade_content {
-    justify-content: left;
-    align-items: start;
+    align-items: center;
   }
 
   .funcionalidade_content p {
@@ -243,23 +238,29 @@
     margin-left: 0;
   }
 
-  .funcionalidades_list ul {
+  .funcionalidades_listWrapper {
     display: grid;
     grid-template-columns: auto auto auto auto;
     row-gap: 16px;
     column-gap: 26px;
   }
 
-  .funcionalidades_list ul li {
-    text-decoration: none;
-    width: 248px;
-    font-size: 16px;
-    line-height: 19px;
+  .funcionalities_listCard {
+    width: 268px;
+    height: 226px;
+  }
+
+  .funcionalities_titleCard {
+    font-size: 1.6rem;
+  }
+
+  .funcionalities_textCard {
+    font-size: 1.6rem;
   }
 
   .btn-comece-agora {
     font-size: 1.6rem;
-    margin-top: 8px;
+    margin-top: 37px;
     margin-bottom: 110px;
   }
 
@@ -375,7 +376,7 @@
     z-index: 1;
   }
 
- 
+
 
   .tableTitle {
     color: #13273B;
@@ -433,7 +434,7 @@
   }
 
   tr {
-   z-index: 5;
+    z-index: 5;
   }
 
   .contato {
