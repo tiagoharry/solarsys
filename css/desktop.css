@@ -376,8 +376,6 @@
     z-index: 1;
   }
 
-
-
   .tableTitle {
     color: #13273B;
     font-size: 2rem;
@@ -430,11 +428,6 @@
     font-weight: 700;
     border: none;
     cursor: pointer;
-    //z-index: 3;
-  }
-
-  tr {
-    z-index: 5;
   }
 
   .contato {
@@ -470,6 +463,8 @@
     font-size: 2rem;
     line-height: 24px;
     text-decoration-line: none;
+    width: 552px;
+    text-align: left;
   }
 
   .contato_form {
