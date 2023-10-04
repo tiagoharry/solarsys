@@ -17,14 +17,19 @@
    \n"Deseja Receber mensagem por email?": ${emailCheck}
   `
 
+
+  console.log(slackMessage);
+
   // @todo
-  fetch('contato@plataformasolarsys.com', {
+  fetch('https://solarsys-email-service-bxaec0m6b-thiagocmaraujo.vercel.app/email', {
     method: "POST",
     headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
+      "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      text: slackMessage
+      content: slackMessage,
+      to: 'tmelo387@gmail.com',
+      subject: 'Novo contato requisitado!'
     })
   }).then(response => response.json())
     .then(data => {
