@@ -1,17 +1,16 @@
-  const sendToSlack = () => {
+  const sendToSlack = (event) => {
+    event.preventDefault();
 
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
-  //const message = document.getElementById('message').value;
-  const cnpj = document.querySelector('.cnpj');
+  const cnpj = document.getElementById('cnpj');
   const phoneCheck = document.getElementById('phoneCheck').checked;
   const emailCheck = document.getElementById('emailCheck').checked;
 
   const slackMessage = `Um contato requisitado! \nNome: ${name}
    \nEmail: ${email} 
    \nNumero de Telefone: ${phone} 
-   \nMensagem: ${message}
    \nCnpj: ${cnpj}
    \n"Deseja Receber mensagem por telefone?": ${phoneCheck}
    \n"Deseja Receber mensagem por email?": ${emailCheck}
@@ -21,7 +20,7 @@
   console.log(slackMessage);
 
   // @todo
-  fetch('https://solarsys-email-service-bxaec0m6b-thiagocmaraujo.vercel.app/email', {
+  fetch('https://solarsys-email-service-aw7msj59q-thiagocmaraujo.vercel.app/email', {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -42,6 +41,5 @@
 
 }
 
-const send = document.querySelector('.send');
-
-send.addEventListener('click', sendToSlack);
+const form = document.querySelector('#formContent');
+form.addEventListener('submit', sendToSlack);
