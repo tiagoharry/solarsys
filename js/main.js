@@ -64,7 +64,7 @@ function erro() {
   const erro = document.querySelector('#erro')
   const phoneValue = document.querySelector('.phone').value
   const cnpjValue = document.querySelector('.cnpj').value
-  const nameValue = document.querySelector('.name').value
+  const nameValue = document.querySelector('.nameForm').value
   const emailValue = document.querySelector('.email').value
   const form = document.querySelector('#formContent')
 

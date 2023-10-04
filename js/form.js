@@ -1,7 +1,7 @@
   const sendToSlack = (event) => {
     event.preventDefault();
 
-  const name = document.getElementById('name').value;
+  const name = document.getElementById('nameForm').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phoneForm').value;
   const cnpj = document.getElementById('cnpjForm').value;
@@ -27,7 +27,7 @@
     },
     body: JSON.stringify({
       content: slackMessage,
-      to: 'tmelo387@gmail.com',
+      to: 'plataformasolarsys@gmail.com',
       subject: 'Novo contato requisitado!'
     })
   }).then(response => response.json())
