@@ -1,29 +1,34 @@
-  const sendToSlack = () => {
+  const sendToSlack = (event) => {
+    event.preventDefault();
 
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
-  const cnpj = document.querySelector('.cnpj');
+  const cnpj = document.getElementById('cnpj').value;
   const phoneCheck = document.getElementById('phoneCheck').checked;
   const emailCheck = document.getElementById('emailCheck').checked;
 
   const slackMessage = `Um contato requisitado! \nNome: ${name}
    \nEmail: ${email} 
    \nNumero de Telefone: ${phone} 
-   \nMensagem: ${message}
    \nCnpj: ${cnpj}
    \n"Deseja Receber mensagem por telefone?": ${phoneCheck}
    \n"Deseja Receber mensagem por email?": ${emailCheck}
   `
 
+
+  console.log(slackMessage);
+
   // @todo
-  fetch('contato@plataformasolarsys.com', {
+  fetch('https://solarsys-email-service-aw7msj59q-thiagocmaraujo.vercel.app/email', {
     method: "POST",
     headers: {
-      "Content-Type": "application/x-www-form-urlencoded"
+      "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      text: slackMessage
+      content: slackMessage,
+      to: 'tmelo387@gmail.com',
+      subject: 'Novo contato requisitado!'
     })
   }).then(response => response.json())
     .then(data => {
@@ -36,46 +41,5 @@
 
 }
 
-const send = document.querySelector('.send');
-
-send.addEventListener('click', sendToSlack);
-
-
-
-
-
-const createEmailParams = (content, to, subject) => {
-  const params = {
-    Destination: {
-      CcAddresses: [],
-      ToAddresses: [to],
-    },
-    Message: {
-      Body: {
-        Html: {
-          Charset: 'UTF-8',
-          Data: content,
-        },
-      },
-      Subject: {
-        Charset: 'UTF-8',
-        Data: subject,
-      },
-    },
-    //@TODO: trocar email source pelo do Moderna
-    Source: 'contact@teasy.solutions',
-    ReplyToAddresses: [],
-  };
-
-  return params;
-};
-
-async function sendEmail(params) {
-  try {
-    const data = await client.send(new SendEmailCommand(params));
-    return data;
-  } catch (e) {
-    console.log(e.message);
-  }
-}
-const { SESClient, SendEmailCommand } = require('@aws-sdk/client-ses');
+const form = document.querySelector('#formContent');
+form.addEventListener('submit', sendToSlack);

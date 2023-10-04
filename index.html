@@ -516,18 +516,18 @@
             <form id="formContent" action="">
               <p id="erro"></p>
               <div class="form">
-                <input type="text" class="name" placeholder="Nome Completo" required>
-                <input type="tel" class="phone" maxlength="15" onkeyup="phone(event)" placeholder="Telefone" required>
-                <input type="email" class="email" placeholder="E-mail" required>
-                <input type="text" class="cnpj" onkeyup="cnpj(event)" maxlength="18" placeholder="Cnpj" required>
+                <input id="name" type="text" class="name" placeholder="Nome Completo" required>
+                <input id="phone" type="tel" class="phone" maxlength="15" onkeyup="phone(event)" placeholder="Telefone" required>
+                <input id="email" type="email" class="email" placeholder="E-mail" required>
+                <input id="cnpj" type="text" class="cnpj" onkeyup="cnpj(event)" maxlength="18" placeholder="Cnpj" required>
               </div>
               <div class="checkbox_content">
                 <div class="checkbox1">
-                  <input type="checkbox" id="check" checked>
+                  <input type="checkbox" id="phoneCheck" checked>
                   <label for="check">Eu concordo em receber mensagens através deste e-mail.</label>
                 </div>
                 <div class="checkbox2">
-                  <input type="checkbox" id="check">
+                  <input type="checkbox" id="emailCheck">
                   <label for="check">Eu concordo em receber mensagens pelo meu número de telefone.</label>
                 </div>
               </div>
