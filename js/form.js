@@ -3,7 +3,6 @@
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
-  //const message = document.getElementById('message').value;
   const cnpj = document.querySelector('.cnpj');
   const phoneCheck = document.getElementById('phoneCheck').checked;
   const emailCheck = document.getElementById('emailCheck').checked;
