@@ -4,7 +4,7 @@
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const phone = document.getElementById('phone').value;
-  const cnpj = document.getElementById('cnpj');
+  const cnpj = document.getElementById('cnpj').value;
   const phoneCheck = document.getElementById('phoneCheck').checked;
   const emailCheck = document.getElementById('emailCheck').checked;
 
